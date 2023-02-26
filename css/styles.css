@@ -41,51 +41,53 @@ html {
 
 /* .body-container.main { */
 body {
-  background-color: var(--primary-white-color);
-  color: var(--text-color);
-  font-family: var(--primary-font-family), sans-serif;
-  font-size: var(--regular-font-size);
-  font-weight: var(--header3-font-weight);
-  letter-spacing: 0.02em;
+    background-color: var(--primary-white-color);
+    color: var(--text-color);
+    font-family: var(--primary-font-family), sans-serif;
+    font-size: var(--regular-font-size);
+    font-weight: var(--header3-font-weight);
+    letter-spacing: 0.02em;
 }  
 
-.container, 
-.footer.section {
+.container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    align-content: center;
     outline: 3px solid tomato;
     background-color:aqua;
 }
-
+ 
 
 .section {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 156px;
+    padding-right: 156px;
     align-items: center;
     outline: 2px solid tomato;
     background-color:blanchedalmond;
 }
 
-div.header.section,
-div.footer.section {
-    background-color: blueviolet;
+div.header.section {
+    padding-bottom: 45px;
 }
 
- /* Hero-img container */
- .hero-img.section,
- .footer.section {
-    background-color: var(--dark-background-color);
- }
+div.header.section,
+div.footer.section {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blueviolet;
+}
 
 a.logo {
     font-family: var(--secondary-font-family);
     font-size: var(--logo-font-size);
     line-height: var(--header-logo-line-height);
     text-decoration: none;
+    line
 }
 
 .logo>span.accentcolor:hover,
@@ -96,7 +98,9 @@ a.logo {
 
 ul.logo-footer.list {
     margin-top: 0px;
-    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--title-text-color);
     line-height: var(--footer-logo-line-height);
 }
 
@@ -139,11 +143,17 @@ ul.contacts.container-wrapper.list {
     font-display: swap;
  }
 
+  /* Hero-img container */
+ .hero-img.section,
+ .footer.section {
+    background-color: var(--dark-background-color);
+ }
+
 
  .hero-msg { 
     width: 490px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 48px;
     font-size: var(--header1-font-size);
     line-height: var(--header1-line-height);
     font-weight: var(--header1-font-weight);
@@ -158,6 +168,7 @@ ul.contacts.container-wrapper.list {
     height: 56px;
     border-radius: 4px;
     padding: 16px 32px;
+    margin-bottom: 168px;
     size: 16px;
     line-height: var(--text-line-height); 
     cursor:pointer;
@@ -238,6 +249,27 @@ li>h3 {
     margin-bottom: 0px;
 }
 
+ul.container-wrapper.features {
+    padding-top: 168px;
+    padding-bottom: 147px;
+}
+
+ul.container-wrapper.cards {
+    /* height: 264px; */
+    width: 264px;
+    align-content: space-between;
+    padding-bottom: 154px;
+    margin-top: 0px;
+}
+
+li.feature.list {
+    padding-left: 24px;
+}
+
+li.first-feature.list {
+    padding-left: 0px;
+}
+
 h3 {
     color: var(--title-text-color);
     font-size: var(--header3-font-size);
@@ -257,12 +289,26 @@ li.img-cotainer.list.first {
     margin-right: 24px;
 }
 
+/* Our team section */
+div.section.team {
+    /* margin-bottom: 34px;  */
+}
+
 li.team-card-container.list {
     background-color: var(--primary-white-color);
 }
 
 ul.teamplayers-card-content {
     background-color: var(--primary-white-color);
+}
+
+h2.title.team {
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
+h2.title.imgs {
+    padding-bottom: 72px;
 }
 
 
@@ -290,7 +336,6 @@ h3.teamplayers-name {
 }
 
 /* Portfolio page */
-
 .filters {
     background-color: var(--background-color);
     border-radius: 1px;
