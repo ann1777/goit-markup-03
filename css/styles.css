@@ -55,7 +55,7 @@ body {
     margin: 0 auto;
     align-content: center;
     outline: 3px solid tomato;
-    background-color:aqua;
+    /* background-color:aqua; */
 }
  
 
@@ -66,7 +66,7 @@ body {
     padding-right: 156px;
     align-items: center;
     outline: 2px solid tomato;
-    background-color:blanchedalmond;
+    /* background-color:blanchedalmond; */
 }
 
 div.header.section {
@@ -77,7 +77,7 @@ div.header.section,
 div.footer.section {
     width: 1158px;
     margin: 0 auto;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 a.logo {
@@ -157,6 +157,8 @@ ul.contacts.container-wrapper.list {
     line-height: var(--header1-line-height);
     font-weight: var(--header1-font-weight);
     color: var(--white-text-color);
+    margin-right: auto;
+    margin-left: auto;
  }
 
 .hero-btn {
@@ -290,6 +292,10 @@ li.img-cotainer.list.first {
 }
 
 /* Our team section */
+.section.team {
+    background-color: var(--white-title-text-color);
+}
+
 li.team-card-container.list {
     background-color: var(--primary-white-color);
 }
@@ -336,57 +342,55 @@ h3.teamplayers-name {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 71px;
-    gap: 24px;
+    text-align: center;
 }
 
 .filters {
     display: inline-block;
-    background-color: var(--background-color);
-    border-radius: 4px;
-    border: 1px solid #E7E9FC;
-    border-color: transparent;
-    line-height: var(--header3-line-height);
-    margin-left: 24px;
-    font-size: 16px;
     min-width: 69px;
     height: 48px;
     padding: 12px 24px;
-    cursor:pointer;
+    margin-left: 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: transparent;
     color: var(--accent-text-color);
+    background-color: var(--background-color);  
+    line-height: var(--header3-line-height);
+    cursor:pointer; 
 }
 
 .filters-active {
     display: inline-block;
-    background-color: var(--btn-active-color);
-    border-radius: 4px;
-    border-color: transparent;
-    line-height: var(--header3-line-height);
-    font-size: 16px;
     min-width: 69px;
     height: 48px;
     padding: 12px 24px;
-    cursor:pointer;
+    font-size: 16px; 
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: transparent;
     color: var(--primary-white-color);
+    background-color: var(--btn-active-color);
+    line-height: var(--header3-line-height);
+    cursor:pointer;  
 }
 
- .filters:hover {
+.filters:active,
+.filters:focus,
+.filters:hover {
     background-color: var(--white-title-text-color);
     border-color: var(--accent-text-color);
 }
 
 .filters-active:hover {
-    border-color: var(--btn-active-color);
+    background-color: var(--accent-text-color);
+    border-color: var(--accent-text-color);
 }
 
 .filters[aria-label]:hover,
 .filter-active[aria-label]:hover {
     text-decoration: underline;
-}
-
-.filters:active,
-.filters:focus {
-    background-color: var(--white-title-text-color);
-    border-color: var(--accent-text-color);
 }
 
 .visually-hidden {
@@ -440,4 +444,16 @@ p.last-content.type {
     font-family: var(--primary-font-family);
     font-size: var(--regular-font-size);
     color: var(--text-color);
+}
+
+.section.row2 {
+    padding-bottom: 67px;
+}
+
+.section.row3 {
+    padding-bottom: 103px;
+}
+
+.centred {
+    text-align: center;
 }
