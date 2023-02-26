@@ -161,15 +161,16 @@ ul.contacts.container-wrapper.list {
 
 .hero-btn {
     display: inline-block;
-    background-color: var(--accent-text-color);
-    color: var(--primary-white-color);
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border-radius: 4px;
     padding: 16px 32px;
     margin-bottom: 168px;
+    background-color: var(--accent-text-color);
+    color: var(--primary-white-color);
+    line-height: var(--text-line-height);
     size: 16px;
-    line-height: var(--text-line-height); 
+    text-align: center; 
     cursor:pointer;
 }
 
