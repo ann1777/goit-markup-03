@@ -49,8 +49,9 @@ body {
   letter-spacing: 0.02em;
 }  
 
-.container, .section2 {
-    /* width: 1464px; */
+.container, 
+.footer.section {
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     outline: 3px solid tomato;
@@ -59,25 +60,24 @@ body {
 
 
 .section {
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 12px;
     padding-right: 12px;
-    width: 700px;
     align-items: center;
     outline: 2px solid tomato;
-}
-
-.section {
     background-color:blanchedalmond;
 }
 
-.section2 {
+div.header.section,
+div.footer.section {
     background-color: blueviolet;
 }
 
  /* Hero-img container */
- .hero-img.section {
+ .hero-img.section,
+ .footer.section {
     background-color: var(--dark-background-color);
  }
 
@@ -94,7 +94,9 @@ a.logo {
     text-decoration: underline;
 }
 
-.footer {
+ul.logo-footer.list {
+    margin-top: 0px;
+    margin-bottom: 0px;
     line-height: var(--footer-logo-line-height);
 }
 
@@ -130,6 +132,7 @@ a.link:focus {
 
 ul.contacts.container-wrapper.list {
     font-style: normal;
+    margin-bottom: 0px;
 }
  
  main {
@@ -139,6 +142,8 @@ ul.contacts.container-wrapper.list {
 
  .hero-msg { 
     width: 490px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: var(--header1-font-size);
     line-height: var(--header1-line-height);
     font-weight: var(--header1-font-weight);
@@ -146,8 +151,15 @@ ul.contacts.container-wrapper.list {
  }
 
 .hero-btn {
+    display: inline-block;
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    size: 16px;
+    line-height: var(--text-line-height); 
     cursor:pointer;
 }
 
@@ -170,6 +182,14 @@ ul.contacts.container-wrapper.list {
     color: var (--title-text-color);
     line-height: var(--header3-line-height);
     text-decoration: none;
+}
+
+.nav.link {
+    color: var(--title-text-color);
+}
+
+.nav.active-link {
+    color: var(--btn-active-color);
 }
 
 .nav.link:hover {
@@ -196,15 +216,26 @@ ul.contacts.container-wrapper.list {
 
 
 /* Main page section titles */
-h2.title {  
+h2.title {
+    margin-bottom: 0px;
+    margin-top: 0px;  
     color: var(--title-text-color);
     font-size: var(--header2-font-size);
     line-height: var(--header2-line-height);
 }
 
 /* Section1 features container */
-ul.container-wrapper.features {
+ul.container-wrapper.features,
+ul.container-wrapper.imgs,
+ul.container-wrapper.cards {
     padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+li>h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h3 {
@@ -214,13 +245,15 @@ h3 {
 }
 
 p.feature-content {
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: var(--text-color);
     font-size: var(--regular-font-size);
     line-height: var(--header3-line-height);
 }
 
 /* What Are We Doing section */
-li.img-cotainer.list {
+li.img-cotainer.list.first {
     margin-right: 24px;
 }
 
@@ -234,20 +267,19 @@ ul.teamplayers-card-content {
 
 
 h3.teamplayers-name {
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-size: var(--header3-font-size);
     color: var(--title-text-color);
 }
 
 .teamplayers-position {
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-size: var(--regular-font-size);
     line-height: var(--header3-line-height);
     color: var(--text-color);
 }
-
-footer {
-    background-color: var(--dark-background-color);
- } 
-
 
 .footer-content {
     width: 264px;
@@ -325,7 +357,6 @@ footer {
     width: 126px;
 }
 
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -339,6 +370,12 @@ footer {
     overflow: hidden;
 }
 
+ul.rows-container-wrapper.up,
+ul.rows-container-wrapper {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 
 h3.content.name {
     font-family: var(--primary-font-family);
@@ -348,6 +385,8 @@ h3.content.name {
 }
 
 p.content.type {
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-family: var(--primary-font-family);
     font-size: var(--regular-font-size);
     color: var(--text-color);
