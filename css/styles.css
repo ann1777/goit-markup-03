@@ -271,7 +271,14 @@ ul.container.team {
     display: flex;
     margin-left: 0px;
     padding-left: 0px;
+    justify-content: space-between;
     width: var(--content-width);
+}
+
+li.feature.list,
+ul.container.imgs,
+ul.container.team {
+    width: 264px;
 }
 
 ul.container.features {
@@ -279,12 +286,7 @@ ul.container.features {
     padding-bottom: 147px;
 }
 
-li.feature.list:not(:first-child) {
-    padding-left: 24px;
-}
-
 ul.container.team {
-    /* height: 264px; */
     width: 264px;
     align-content: space-between;
     padding-bottom: 154px;
@@ -292,17 +294,17 @@ ul.container.team {
 
 .h3header {
 /* h3 { */
+    margin-bottom: 8px;
     color: var(--title-text-color);
     font-size: var(--header3-font-size);
     line-height: var(--header3-line-height);
 }
 
-p.feature-content {
-    margin-top: 0px;
-    margin-bottom: 0px;
+.feature.content {
     color: var(--text-color);
     font-size: var(--regular-font-size);
-    line-height: var(--header3-line-height);
+    font-weight: var(--text-font-weight);
+    line-height: var(--text-line-height);
 }
 
 /* What Are We Doing section */
