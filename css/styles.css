@@ -116,7 +116,7 @@ div.footer.section {
     margin: 0 auto;
     padding-left: 156px;
     padding-right: 156px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     /* background-color:blanchedalmond; */
 }
 
@@ -322,7 +322,7 @@ li.img-cotainer.list.first {
 .h2header.team { 
     align-content: center;
     padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .card-container.list {   
@@ -333,7 +333,8 @@ li.img-cotainer.list.first {
     margin-bottom: 32px;
 }
 
-.teamplayers {
+.teamplayers,
+.card-img {
     margin-bottom: 32px;
 }
 
@@ -341,13 +342,20 @@ li.img-cotainer.list.first {
     margin-right: 24px;
 }
 
-.h3header.teamplayers-name {
+/* index.html Section3 container  */
+.h3header.teamplayers-name,
+/* portfolio.html Row 3 container */
+.h3header.content.name {
     margin-bottom: 8px;
     font-size: var(--header3-font-size);
     color: var(--title-text-color);
 }
 
-.teamplayers-position {
+/* index.html Section3 container  */
+.teamplayers-position,
+/* portfolio.html Row 3 container */
+p.content.type {
+    margin-bottom: 32px;
     font-size: var(--regular-font-size);
     line-height: var(--header3-line-height);
     color: var(--text-color);
@@ -444,7 +452,6 @@ ul.rows-container.up,
 ul.rows-container {
     display:flex;
     padding: 0px;
-    padding-bottom: 32px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -453,12 +460,19 @@ ul.rows-container {
     margin-right: 24px;
 }
 
-.card-container.list {
+.item-cotainer.list {
     outline: 2px solid tomato;
     width: 360px;
     margin-bottom: 0px;
+    border-bottom-width: 5px;
+    border-bottom-color: E7E9FC;
+    border-bottom-color: #4D5AE5;
+    background-color: var(--primary-white-color);
 }
 
+.card-content.list li {
+    margin-left: 18px;
+}
 
 .h3header.content-name {
 /* h3.content.name { */
@@ -470,29 +484,13 @@ ul.rows-container {
     color: var(--title-text-color);
 }
 
-p.content.type {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-bottom: 32px;
-    font-family: var(--primary-font-family);
-    font-size: var(--regular-font-size);
-    color: var(--text-color);
-}
-
-p.last-content.type {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    font-family: var(--primary-font-family);
-    font-size: var(--regular-font-size);
-    color: var(--text-color);
-}
-
+.section.row1,
 .section.row2 {
-    padding-bottom: 67px;
+    margin-bottom: 48px;
 }
 
 .section.row3 {
-    padding-bottom: 103px;
+    margin-bottom: 103px;
 }
 
 .centred {
