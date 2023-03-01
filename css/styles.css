@@ -224,10 +224,7 @@ header.section {
  }
 
  .hero-msg { 
-    margin-top: 0px;
-    margin-bottom: 48px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0px auto 48px;
     color: var(--white-text-color);
     font-size: var(--header1-font-size);
     line-height: var(--header1-line-height);
@@ -241,11 +238,11 @@ header.section {
     height: 56px;
     border-radius: 4px;
     padding: 16px 32px;
-    margin-bottom: 168px;
+    margin-bottom: 188px;
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
     line-height: var(--text-line-height);
-    size: 16px;
+    font-size: 16px;
     text-align: center; 
     cursor:pointer;
 }
@@ -328,8 +325,12 @@ li.img-cotainer.list.first {
     padding-bottom: 72px;
 }
 
-.card-container.list {
+.card-container.list {   
     background-color: var(--primary-white-color);
+}
+
+.card-content.list.centred {
+    margin-bottom: 32px;
 }
 
 .teamplayers {
@@ -340,16 +341,13 @@ li.img-cotainer.list.first {
     margin-right: 24px;
 }
 
-.h3header .teamplayers-name {
-    margin-bottom: 0px;
-    margin-top: 0px;
+.h3header.teamplayers-name {
+    margin-bottom: 8px;
     font-size: var(--header3-font-size);
     color: var(--title-text-color);
 }
 
 .teamplayers-position {
-    margin-bottom: 0px;
-    margin-top: 0px;
     font-size: var(--regular-font-size);
     line-height: var(--header3-line-height);
     color: var(--text-color);
@@ -357,7 +355,6 @@ li.img-cotainer.list.first {
 
 /* Logo footer */
 ul.logo-footer.list {
-    margin-top: 0px;
     padding-left: 0px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -456,7 +453,7 @@ ul.rows-container {
     margin-right: 24px;
 }
 
-.card-cotainer.list {
+.card-container.list {
     outline: 2px solid tomato;
     width: 360px;
     margin-bottom: 0px;
