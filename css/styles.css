@@ -164,7 +164,7 @@ header.section {
     width: 261px;
 }
 
-.menu-nav .item:not(:first-child) {
+.menu-nav > .item:not(:first-child) {
 /* .menu-nav .item + .item { */
     margin-left: 40px;
 } 
@@ -199,7 +199,7 @@ header.section {
     color: var(--text-color);
 }
 
-.contacts .item:not(:first-child) {
+.contacts > .item:not(:first-child) {
 /* .contacts .item + .item { */
     margin-left: 40px;
 }
@@ -340,7 +340,7 @@ li.img-cotainer.list.first {
     margin-bottom: 32px;
 }
 
-.team .list:not(:last-child){
+.team > .list:not(:last-child){
     margin-right: 24px;
 }
 
