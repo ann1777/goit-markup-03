@@ -514,8 +514,9 @@ ul.rows-container {
     background-color: var(--primary-white-color);
 }
 
-.card-descript.list > ul {
+.card-descript.list {
     padding-left: 16px;
+    padding-right: 16px;
     list-style-type: none;
 }
 
