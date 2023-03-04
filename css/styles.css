@@ -457,6 +457,9 @@ section.filters-container.top {
     font-size: var(--regular-font-size); 
     color: var(--primary-white-color);
     background-color: var(--btn-active-color);
+    filter: drop-shadow(2px 0px 2px rgba(0,0,0,0.12));
+    filter: drop-shadow(1px 0px 2px rgba(0,0,0,0.08));
+    filter: drop-shadow(1px 0px 3px rgba(0,0,0,0.1));
 }
 
 .filters:active,
