@@ -24,12 +24,12 @@
     --header1-line-height: 1.07;
     --header2-line-height: 1.11;
     --header3-line-height: 1.15;
-    --text-line-height: 1.50;
+    --feature-widthtext-line-height: 1.50;
     --header-logo-line-height: 1.33;
     --footer-logo-line-height: 1.17;
     --page-width: 1440px;
     --content-width: 1128px;
-    --text-width: 264px;
+    --feature-width: 264px;
     --padding-gap: 24px;
     --hero-container-gap: 188px;
     --card-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12),
@@ -273,11 +273,16 @@ div.footer.section {
 /* Main page section titles */
 .h2header.title {
 /* h2.title { */
-    margin-bottom: 0px;
+    margin-bottom: 72px;
     margin-top: 0px;  
     color: var(--title-text-color);
     font-size: var(--header2-font-size);
     line-height: var(--header2-line-height);
+}
+
+/* Our Team title */
+.section-team .h2header {
+    padding-top: 120px;
 }
 
 /* Section1 features container */
@@ -288,21 +293,25 @@ ul.container.team {
     margin-left: 0px;
     padding-left: 0px;
     justify-content: space-between;
-    width: var(--content-width);
+    /* width: var(--content-width); */
+    width: 1128px;
 }
 
 li.feature.list {
-    width: var(--text-width);
+    width: var(--feature-width);
+    margin-right: 24px;
+    padding-left: 0px;
 }
 
-/* li.feature.list:last-child {
+li.feature.list:last-child {
     margin-right: 0px;
-} */
+}
 
 ul.container.features {
     flex-basis: calc(100% / 4);
     padding-top: calc(7 * var(--padding-gap));
     padding-bottom: calc(3.25 * var(--padding-gap));
+    padding-right: 0px;
     outline: 1px solid teal;
 }
 
@@ -418,7 +427,7 @@ ul.logo-footer.list {
 }
 
 .footer-content {
-    width: var(--text-width);
+    width: var(--feature-width);
     color: var(--white-text-color);
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
