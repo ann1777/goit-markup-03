@@ -318,11 +318,13 @@ ul.container.features {
 .container.imgs,
 .rows-container {
     flex-basis: calc(100% / 3);
+    padding-right: 0px;
     outline: 1px solid blue;
 }
 
 ul.container.team {
     flex-basis: calc(100% / 4);
+    padding-right: 0px;
     padding-bottom: calc(10px + 6 * var(--padding-gap));
     outline: 1px solid red;
 }
