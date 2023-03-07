@@ -30,6 +30,7 @@
     --page-width: 1440px;
     --content-width: 1158px;
     --feature-width: 264px;
+    --filters-width: 586px;
     --footer-content-width: var(--feature-width);
     --footer-padding-gap: 156px;
     --padding-gap: 24px;
@@ -441,8 +442,9 @@ ul.logo-footer.list {
 }
 
 .filters-container.top {
-    margin: 89px auto 71px;
-    width: 586px;
+    margin: 96px auto 72px;
+    width: var(--filters-width);
+    /* margin: 89px auto 71px; */
     /* outline: 1px solid tomato; */
 }
 
