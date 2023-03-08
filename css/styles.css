@@ -62,7 +62,7 @@ html {
 }
 
 /* Reset internal indents */
-ul { 
+ul[class] { 
   padding: 0px;
   list-style: none; 
 } 
@@ -71,19 +71,22 @@ ul {
 h1, 
 h2,
 h3, 
-h4, 
+h4,
 p, 
-ul { 
+ul[class] {
   margin: 0; 
 }
 
 /* Reset extra spases atound imgs */
 img {
     display: block;
+    max-width: 100%;
+    width: 100%;
 }
 
 button {
     cursor: pointer;
+    font: inherit;
 }
 
 /* Link decorations */
@@ -105,6 +108,7 @@ a.link:is(:hover, :focus) {
 
 /* .body-container.main { */
 body {
+    min-height: 100vh;
     background-color: var(--primary-white-color);
     color: var(--text-color);
     font-family: var(--primary-font-family), sans-serif;
