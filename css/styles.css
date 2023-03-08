@@ -28,7 +28,7 @@
     --header-logo-line-height: 1.33;
     --footer-logo-line-height: 1.17;
     --page-width: 1440px;
-    --content-width: 1158px;
+    --content-width: 1188px;
     --feature-width: 264px;
     --filters-width: 586px;
     --footer-content-width: var(--feature-width);
@@ -125,6 +125,8 @@ body {
     width: var(--content-width);
     flex: 0 0 auto;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
     /* outline: 3px solid teal; */
 }
  
@@ -318,6 +320,7 @@ ul.container.features {
     /* outline: 1px solid blue; */
 }
 
+/* Our Team container */
 ul.container.team {
     flex-basis: calc(100% / 4);
     margin-left: auto;
