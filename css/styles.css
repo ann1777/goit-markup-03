@@ -320,6 +320,8 @@ ul.container.features {
 
 ul.container.team {
     flex-basis: calc(100% / 4);
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: calc(10px + 6 * var(--padding-gap));
     /* outline: 1px solid red; */
 }
@@ -349,7 +351,8 @@ ul.container.team {
 } */
 
 /* Our team section */
-.section-team.page-container {
+.section-team .container {
+    width: var(--page-width);
     background-color: var(--white-title-text-color);
 }
 
