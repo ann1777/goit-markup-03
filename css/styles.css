@@ -151,7 +151,6 @@ header {
 /* .logo>span.bluecolor:hover, */
 /* .logo>span.whitecolor:hover { */
     /* text-decoration: underline; */
-}
 
 .accentcolor {
     color: var(--accent-text-color);
@@ -293,6 +292,17 @@ ul.container.features {
     /* outline: 1px solid teal; */
 }
 
+.feature .h3header {
+    text-align: left; 
+    margin-bottom: 8px;   
+}
+
+.feature.content {
+    text-align: left;
+    color: var(--text-color);
+    font-size: var(--regular-font-size);
+    font-weight: var(--text-font-weight);
+
 .container.imgs,
 .rows-container {
     flex-basis: calc(100% / 3);
@@ -314,7 +324,7 @@ ul.container.team {
     color: var(--title-text-color);
     font-size: var(--header3-font-size);
     line-height: var(--header3-line-height);
-}
+}///
 
 .feature.content {
     color: var(--text-color);
@@ -395,7 +405,7 @@ p.content.type {
     background-color: var(--dark-background-color);
 }
 
-/* Logo footer */
+/** Logo footer */
 ul.logo-footer.list {
     padding-left: 0px;
     padding-top: calc(4px + 4 * var(--padding-gap));
