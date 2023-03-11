@@ -316,7 +316,12 @@ ul.container.team {
     line-height: var(--header3-line-height);
 }
 
+.feature .h3header {
+    text-align: left;    
+}
+
 .feature.content {
+    text-align: left;
     color: var(--text-color);
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
