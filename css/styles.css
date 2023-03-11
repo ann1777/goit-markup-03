@@ -1,7 +1,7 @@
 :root {
     --primary-text-color: rdba(0, 0, 0, 0.8);
     --text-color: #434455;
-    --title-text-color: #2E2F42; 
+    --title-text-color: #2E2F42;
     --accent-text-color: #4D5AE5;
     --white-title-text-color:#F4F4FD;
     --white-text-color: #E7E9FC;
@@ -152,11 +152,15 @@ header {
 /* .logo>span.whitecolor:hover { */
     /* text-decoration: underline; */
 
-.accentcolor {
+.logo-web {
     color: var(--accent-text-color);
 }
 
-.whitecolor {
+.logo-studio {
+    color: var(--title-text-color);
+}
+
+.white-logo-studio {
     color: var(--white-title-text-color);
 }
 
