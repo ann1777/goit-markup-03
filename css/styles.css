@@ -147,11 +147,11 @@ header {
     text-decoration: none;
 }
 
-.logo>span.accentcolor:hover,
-.logo>span.bluecolor:hover,
-.logo>span.whitecolor:hover {
-    text-decoration: underline;
-}
+/* .logo>span.accentcolor:hover, */
+/* .logo>span.bluecolor:hover, */
+/* .logo>span.whitecolor:hover { */
+    /* text-decoration: underline; */
+/* } */
 
 .accentcolor {
     color: var(--accent-text-color);
