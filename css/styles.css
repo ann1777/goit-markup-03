@@ -151,7 +151,7 @@ header {
 /* .logo>span.bluecolor:hover, */
 /* .logo>span.whitecolor:hover { */
     /* text-decoration: underline; */
-/* } */
+}
 
 .accentcolor {
     color: var(--accent-text-color);
@@ -316,12 +316,7 @@ ul.container.team {
     line-height: var(--header3-line-height);
 }
 
-.feature .h3header {
-    text-align: left;    
-}
-
 .feature.content {
-    text-align: left;
     color: var(--text-color);
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
@@ -448,6 +443,25 @@ ul.logo-footer.list {
     background-color: var(--white-title-text-color);
     border: 4px solid var(--white-text-color);
 }
+
+.filters[aria-label= "All"] {
+    font-size: var(--regular-font-size); 
+    color: var(--primary-white-color);
+    background-color: var(--btn-active-color);
+    box-shadow: var(--card-shadow);
+}
+
+.filters [aria-label= "All"]:hover{
+    border: 4px;
+    background-color: var(--btn-active-color);
+    border-color: var(--accent-text-color);
+}
+
+.filters[aria-label]:hover,
+.filter.active[aria-label]:hover {
+    text-decoration: underline;
+}
+
 
 .hidden {
     position: absolute;
