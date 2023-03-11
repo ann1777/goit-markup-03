@@ -302,6 +302,7 @@ ul.container.features {
     color: var(--text-color);
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
+}
 
 .container.imgs,
 .rows-container {
@@ -324,7 +325,7 @@ ul.container.team {
     color: var(--title-text-color);
     font-size: var(--header3-font-size);
     line-height: var(--header3-line-height);
-}///
+}
 
 .feature.content {
     color: var(--text-color);
@@ -366,11 +367,8 @@ ul.container.team {
 }
 
 .card-content.list{
-    padding: 32px 16px;
-}
-
-p.teamplayers-position {
-    margin-bottom: 0px;
+    padding: 32px 16px; 
+    width: var(--footer-content-width);
 }
 
 ul.card-content.list li {
