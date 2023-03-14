@@ -109,7 +109,7 @@ body {
     background-color: var(--primary-white-color);
     color: var(--text-color);
     font-family: var(--primary-font-family), sans-serif;
-    line-height: var(--text-line-height);
+    line-height: 1.5;
     letter-spacing: 0.02em; 
 }
 
@@ -164,7 +164,6 @@ header {
 }
 
 .menu-nav > .item:not(:first-child) {
-/* .menu-nav .item + .item { */
     margin-left: 40px;
 } 
 
@@ -183,8 +182,7 @@ header {
 
 .contacts.list > ul {
     display:flex;
-    justify-content: space-between;
-    width: 346px;
+    gap: 40px;
 }
 
 .contacts a,
@@ -204,14 +202,12 @@ header {
 }
 
   /* Hero-img container */
- .hero-img .container {
-    padding: var(--hero-container-gap) 0;
+ .hero-img .container { 
  }
 
  .hero-img {
-    margin: auto;
+    padding: var(--hero-container-gap) 0;
     align-content: center;
-    width: var(--page-width);
     background-color: var(--dark-background-color);
  }
 
@@ -280,10 +276,6 @@ li.feature.list:last-child {
     margin-right: 0px;
 }
 
-.features-list {
-    display:flex;
-}
-
 /* What are we doing section */
 .information {
     padding-top: 0;
@@ -300,7 +292,6 @@ li.feature.list:last-child {
 
 .feature-content {
     color: var(--text-color);
-    line-height: 1.5;
 }
 
 /** Our team section */
@@ -318,7 +309,7 @@ li.feature.list:last-child {
 }
 
 .team-items{
-    padding: 32px 16px;
+    padding: 32px 0;
     text-align: center;
 }
 
@@ -349,7 +340,6 @@ ul.card-content.list li {
     margin-top: 16px;
     width: var(--footer-content-width);
     color: var(--white-text-color);
-    line-height: var(--header3-line-height);
 }
 
 /** Portfolio page */
@@ -371,7 +361,8 @@ ul.card-content.list li {
     height: 48px;
     padding: calc(var(--padding-gap)/2) var(--padding-gap);
     font-size: var(--regular-font-size); 
-    font-weight: 500;  
+    font-weight: 500; 
+    letter-spacing: 0.02em; 
     border: 1px solid;
     border-top: 4px;
     background: #F4F4FD;
@@ -379,7 +370,6 @@ ul.card-content.list li {
     border-radius: 4px;
     color: var(--accent-text-color);
     background-color: var(--white-background-color);  
-    line-height: 1.5; 
 }
 
 .filters:is(:focus, :hover) {
